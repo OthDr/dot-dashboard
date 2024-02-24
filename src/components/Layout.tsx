@@ -8,9 +8,11 @@ const Layout = () => {
     return (
         <div>
             <Navbar />
-            <div className="flex">
+            <div className="flex bg-slate-900">
                 <Sidebar />
-                <Outlet />
+                <div className="w-full bg-slate-700">
+                    <Outlet />
+                </div>
             </div>
             <Footer />
         </div>
