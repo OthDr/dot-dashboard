@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Users from "../scenes/users/Users";
 import Products from "../scenes/products/Products";
 
-
 export const Router = createBrowserRouter([
     {
         path: "/",
