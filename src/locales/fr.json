@@ -1,3 +1,14 @@
 {
-    
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "password": "Mot de passe",
+    "passwordConfirm": "Confirmation du mot de passe",
+    "enterPassword": "Entrez votre mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "passwordMatchmErr": "Mots de passe non identiques",
+    "invalidEmail": "Email invalide",
+    "wrongCredentials": "Nom d'utilisateur ou mot de passe invalide",
+    "notFound": "Non trouvé"
 }

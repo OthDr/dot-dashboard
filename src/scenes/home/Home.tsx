@@ -1,6 +1,5 @@
 import React from 'react'
 import BarChart from '../../components/charts/BarChart'
-import CalendarChart from '../../components/charts/CalendarChart';
 import PieChart from '../../components/charts/PieChart';
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-2 h-[75vh] lg:h-[50vh] lg:divide-x divide-slate-200">
-                    <CalendarChart />
+                    
                     <BarChart />
                 </div>
             </div>

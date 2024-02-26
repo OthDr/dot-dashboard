@@ -1,3 +1,14 @@
 {
-    
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "password": "كلمة المرور",
+    "passwordConfirm": "تأكيد كلمة المرور",
+    "createNewPassword": "إنشاء كلمة مرور جديدة",
+    "enterPassword": "أدخل كلمة المرور الخاصة بك",
+    "confirmPassword": "تأكيد كلمة المرور الجديدة الخاصة بك",
+    "passwordMatchmErr": "كلمات المرور غير متطابقة",
+    "invalidEmail": "بريد إلكتروني غير صالح",
+    "notFound": "غير موجود"
 }
