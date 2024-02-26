@@ -27,11 +27,11 @@ const SignIn: React.FC = () => {
     });
 
     return (
-        <div className='max-w-[1920px] mx-auto flex h-screen bg-gradient-to-br from-darkestPurple1 to-darkestPurple2'>
+        <div className='max-w-[1920px] mx-auto flex h-screen'>
 
             <img className='w-1/2' src={bg} alt="" />
 
-            <div className="w-1/2 flex flex-col items-center justify-center">
+            <div className="w-1/2 flex flex-col items-center justify-center  bg-gradient-to-br from-darkestPurple1 to-darkestPurple2">
                 <form
                     className='w-full md:w-[400px] space-y-2 md:space-y-4'
                     action=""
