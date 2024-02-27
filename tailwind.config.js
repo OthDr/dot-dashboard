@@ -10,9 +10,9 @@ module.exports = {
       },
       colors: {
         primaryBlue: '#0075FF',
-        darkBlue: '#121241',
+        darkBlue: '#111140',
         darkPurple: '#1A1E3A',
-        darkestPurple1: '#0E1139',
+        darkestPurple1: '#0d0139',
         darkestPurple2: '#030616',
         primaryGreen: '#01B574',
         primaryWhite: '#FFFFFF',
