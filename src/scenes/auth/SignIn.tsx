@@ -45,7 +45,7 @@ const SignIn: React.FC = () => {
 
             <div className="relative w-1/2 hidden lg:block">
                 <img className='w-full h-full' src={bg} alt="" />
-                <div className="absolute top-0 start-0 drop-shadow-md capitalize w-full h-full flex flex-col gap-y-4  items-center justify-center bg-transparent text-primaryWhite font-bold animate-slowfade2">
+                <div className="absolute top-0 start-0 drop-shadow-md capitalize w-full h-full flex flex-col gap-y-4 items-center justify-center bg-transparent text-primaryWhite font-bold animate-slowfade2">
                     <h3 className='opacity-75 text-lg'>{t("signInH3")}</h3>
                     <h1 className='lg:text-4xl'>{t("signInH1")}</h1>
                 </div>
@@ -53,28 +53,30 @@ const SignIn: React.FC = () => {
 
             <div className="relative w-full p-4 lg:p-0 lg:w-1/2 flex flex-col items-center justify-center  bg-gradient-to-br from-darkestPurple1 to-darkestPurple2">
                 <form
-                    className='w-full md:w-[400px] space-y-2 md:space-y-4 animate-slowfade2'
+                    className='w-full md:w-[400px] space-y-2 md:space-y-6 animate-slowfade2'
                     onSubmit={formik.handleSubmit}
                 >
-                    <div className="block space-y-2 lg:space-y-3 pb-4 lg:pb-8">
+                    <div className="block space-y-2 lg:space-y-3 pb-3 lg:pb-6">
                         <h1 id="gradientH1" className='text-start text-primaryWhite font-bold text-lg lg:text-3xl'>{t("signInFormH1")}</h1>
                         <p className='text-start text-baseGray text-xs lg:text-sm'>{t("signInFormP")}</p>
                     </div>
 
-                    <PrimaryAuthInput
-                        name="email"
-                        label="email"
-                        inputType="text"
-                        placeHolder="enterEmail"
-                        formik={formik}
-                    />
-                    <PrimaryAuthInput
-                        name="password"
-                        label="password"
-                        inputType="password"
-                        placeHolder="enterPassword"
-                        formik={formik}
-                    />
+                    <div className="block space-y-3">
+                        <PrimaryAuthInput
+                            name="email"
+                            label="email"
+                            inputType="text"
+                            placeHolder="enterEmail"
+                            formik={formik}
+                        />
+                        <PrimaryAuthInput
+                            name="password"
+                            label="password"
+                            inputType="password"
+                            placeHolder="enterPassword"
+                            formik={formik}
+                        />
+                    </div>
 
                     <SwitchButton
                         isOn={isRemeberMe}

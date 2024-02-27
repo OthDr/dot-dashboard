@@ -38,6 +38,7 @@ const PrimaryAuthInput: React.FC<Props> = ({
             }
             <div className="relative w-full h-fit block">
                 <input
+                    id={name}
                     name={name}
                     className={`px-4 md:px-6 py-3 md:py-4 w-full text-baseGray text-sm md:text-base placeholder:text-baseGray/50 rounded-full border bg-gradient-to-br from-darkBlue to-darkPurple outline-none shadow-md shadow-transparent focus:border-primaryBlue hover:shadow-purple-600/35 focus:shadow-purple-600/50 duration-200 ${borderStyle}`}
                     type={showPassword ? "text" : inputType}
@@ -50,9 +51,9 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 {/* Toggle show/hide pwd */}
                 {inputType === "password" && (
                     showPassword ?
-                        <PasswordOn onClick={() => setShowPassword(false)} className='absolute text-gray-600 w-5 h-5 bottom-1/3 end-5 cursor-pointer' />
+                        <PasswordOn onClick={() => setShowPassword(false)} className='absolute text-baseGray drop-shadow w-5 h-5 bottom-1/3 end-5 cursor-pointer' />
                         :
-                        <PasswordOff onClick={() => setShowPassword(true)} className='absolute text-gray-600 w-5 h-5 bottom-1/3 end-5 cursor-pointer' />
+                        <PasswordOff onClick={() => setShowPassword(true)} className='absolute text-baseGray drop-shadow w-5 h-5 bottom-1/3 end-5 cursor-pointer' />
                 )
                 }
             </div>
