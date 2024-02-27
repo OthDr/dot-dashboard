@@ -26,6 +26,7 @@ const SignIn: React.FC = () => {
         }
     });
 
+    console.log(formik.values);
     return (
         <div className='max-w-[1920px] mx-auto flex h-screen'>
 
@@ -46,7 +47,7 @@ const SignIn: React.FC = () => {
                     <PrimaryAuthInput
                         name="password"
                         label="password"
-                        inputType="text"
+                        inputType="password"
                         placeHolder="enterPassword"
                         formik={formik}
                     />

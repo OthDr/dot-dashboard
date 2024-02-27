@@ -31,6 +31,7 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 </label>
             }
             <input
+                name={name}
                 className='p-2 md:p-3 w-full text-baseGray text-sm md:text-base placeholder:text-baseGray/50 rounded-full border border-baseGray bg-gradient-to-br from-darkBlue to-darkPurple outline-none focus:shadow-md focus:border-primaryBlue focus:shadow-purple-600/50 duration-200'
                 type={inputType}
                 placeholder={t(placeHolder)}
@@ -38,7 +39,11 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 onChange={formik.handleChange}
                 value={formik.values[name]}
             />
-
+            {formik.touched[name] && formik.errors[name] && (
+                <p className="absolute flex text-primaryRed -bottom-4 left-0 text-xs lg:text-sm">
+                    {formik.errors[name]}
+                </p>
+            )}
         </div>
     )
 };
