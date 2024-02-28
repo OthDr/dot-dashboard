@@ -1,3 +1,11 @@
+import { ReactComponent as dashboardIcon } from "../assets/icons/sideBar/dashboard.svg";
+import { ReactComponent as chartsIcon } from "../assets/icons/sideBar/charts.svg";
+import { ReactComponent as billingIcon } from "../assets/icons/sideBar/billing.svg";
+import { ReactComponent as settingsIcon } from "../assets/icons/sideBar/settings.svg";
+import { ReactComponent as profileIcon } from "../assets/icons/sideBar/profile.svg";
+import { ReactComponent as signInIcon } from "../assets/icons/sideBar/rocket.svg";
+import { ReactComponent as signUpIcon } from "../assets/icons/sideBar/rocket.svg";
+
 export const sideBarElements = [
     {
         id: 1,
@@ -5,45 +13,27 @@ export const sideBarElements = [
         listItems: [
             {
                 id: 1,
-                title: "Homepage",
-                url: "/",
-                icon: "home.svg",
+                title: "Dashboard",
+                url: "/dashboard",
+                icon: dashboardIcon,
             },
             {
                 id: 2,
-                title: "Profile",
-                url: "/users/1",
-                icon: "user.svg",
-            },
-        ],
-    },
-    {
-        id: 2,
-        title: "lists",
-        listItems: [
-            {
-                id: 1,
-                title: "Users",
-                url: "/users",
-                icon: "user.svg",
-            },
-            {
-                id: 2,
-                title: "Products",
-                url: "/products",
-                icon: "product.svg",
+                title: "Charts",
+                url: "/charts",
+                icon: chartsIcon,
             },
             {
                 id: 3,
-                title: "Orders",
-                url: "/orders",
-                icon: "order.svg",
+                title: "Billing",
+                url: "/billing",
+                icon: billingIcon,
             },
             {
                 id: 4,
-                title: "Posts",
-                url: "/posts",
-                icon: "post2.svg",
+                title: "Settings",
+                url: "/settings",
+                icon: settingsIcon,
             },
         ],
     },
@@ -53,46 +43,22 @@ export const sideBarElements = [
         listItems: [
             {
                 id: 1,
-                title: "Elements",
-                url: "/",
-                icon: "element.svg",
+                title: "Profile",
+                url: "/profile",
+                icon: profileIcon,
             },
             {
                 id: 2,
-                title: "Notes",
-                url: "/",
-                icon: "note.svg",
+                title: "Sign-In",
+                url: "/sign-in",
+                icon: signInIcon,
             },
             {
                 id: 3,
-                title: "Forms",
-                url: "/",
-                icon: "form.svg",
-            },
-            {
-                id: 4,
-                title: "Calendar",
-                url: "/",
-                icon: "calendar.svg",
+                title: "Sign-Up",
+                url: "/sign-up",
+                icon: signUpIcon,
             },
         ],
-    },
-    {
-        id: 4,
-        title: "analytics",
-        listItems: [
-            {
-                id: 1,
-                title: "Charts",
-                url: "/",
-                icon: "chart.svg",
-            },
-            {
-                id: 2,
-                title: "Logs",
-                url: "/",
-                icon: "log.svg",
-            },
-        ],
-    },
+    }
 ];
