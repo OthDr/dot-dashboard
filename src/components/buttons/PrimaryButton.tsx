@@ -14,7 +14,7 @@ const PrimaryButton: React.FC<Props> = ({ loading, handleClick }) => {
     return (
         <button
             disabled={loading}
-            className="bg-gradient-to-tl from-[#174DAF] to-primaryBlue px-4 md:px-6 py-3 w-full flex flex-col items-center justify-center rounded-xl text-white hover:rounded-lg hover:brightness-110 shadow-lg duration-100"
+            className="bg-gradient-to-tl disabled:opacity-60 from-[#174DAF] to-primaryBlue px-4 md:px-6 py-2 md:py-3 w-full flex flex-col items-center justify-center rounded-xl text-sm md:text-base text-white hover:rounded-lg hover:brightness-110 shadow-lg duration-100"
             onClick={handleClick}
         >
             {loading

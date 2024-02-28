@@ -6,7 +6,7 @@ import bg from "../../assets/bg/signInBg.png";
 import { useTranslation } from 'react-i18next';
 import SwitchButton from '../../components/buttons/SwitchButton';
 import PrimaryButton from '../../components/buttons/PrimaryButton';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import DothBottomLabel from '../../components/include/DothBottomLabel';
 import { signInValidation } from '../../utils/formValidation/signInValidation';
 
@@ -14,7 +14,10 @@ const SignIn: React.FC = () => {
 
     const { t } = useTranslation();
 
+    const navigate = useNavigate();
+
     const [isRemeberMe, setIsRemeberMe] = useState<boolean>(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleRemeberMe = (event: any) => {
         event.preventDefault();
@@ -40,6 +43,14 @@ const SignIn: React.FC = () => {
         }
     });
 
+    const handleAuthClick = () => {
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            navigate('/dashboard');
+        }, 1000);
+    };
+
     return (
         <div className='max-w-[1920px] mx-auto flex h-screen'>
 
@@ -53,7 +64,7 @@ const SignIn: React.FC = () => {
 
             <div className="relative w-full p-4 lg:p-0 lg:w-1/2 flex flex-col items-center justify-center auth-bg">
                 <form
-                    className='w-full md:w-[400px] space-y-2 md:space-y-6 animate-slowfade2'
+                    className='w-full sm:w-[400px] space-y-2 sm:space-y-6 animate-slowfade2'
                     onSubmit={formik.handleSubmit}
                 >
                     <div className="block space-y-2 lg:space-y-3 pb-2 lg:pb-4">
@@ -84,8 +95,8 @@ const SignIn: React.FC = () => {
                     />
 
                     <PrimaryButton
-                        handleClick={() => null}
-                        loading={false}
+                        handleClick={handleAuthClick}
+                        loading={isLoading}
                     />
 
                     <div className="w-fit mx-auto flex gap-x-1 text-sm lg:text-base text-baseGray">

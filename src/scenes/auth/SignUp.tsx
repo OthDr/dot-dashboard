@@ -6,7 +6,7 @@ import bg from "../../assets/bg/signInBg.png";
 import { useTranslation } from 'react-i18next';
 import SwitchButton from '../../components/buttons/SwitchButton';
 import PrimaryButton from '../../components/buttons/PrimaryButton';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import DothBottomLabel from '../../components/include/DothBottomLabel';
 import { signUpValidation } from '../../utils/formValidation/signUpValidation';
 
@@ -14,7 +14,10 @@ const SignUp: React.FC = () => {
 
     const { t } = useTranslation();
 
+    const navigate = useNavigate();
+
     const [isRemeberMe, setIsRemeberMe] = useState<boolean>(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleRemeberMe = (event: any) => {
         event.preventDefault();
@@ -39,6 +42,14 @@ const SignUp: React.FC = () => {
             // }
         }
     });
+
+    const handleAuthClick = () => {
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            navigate('/dashboard');
+        }, 1000);
+    };
 
     return (
         <div className='max-w-[1920px] mx-auto flex h-screen'>
@@ -91,8 +102,8 @@ const SignUp: React.FC = () => {
                     />
 
                     <PrimaryButton
-                        handleClick={() => null}
-                        loading={false}
+                        handleClick={handleAuthClick}
+                        loading={isLoading}
                     />
 
                     <div className="w-fit mx-auto flex gap-x-1 text-sm lg:text-base text-baseGray">
