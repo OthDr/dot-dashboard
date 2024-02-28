@@ -1,4 +1,4 @@
-export type SignUpRequestPayload = {
+export type SignInRequestPayload = {
     email: string,
     password: string,
 };

@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import PrimaryAuthInput from '../../components/inputs/PrimaryAuthInput';
-import { SignUpRequestPayload } from '../../data/request/SignUpRequestPayload';
+import { SignInRequestPayload } from '../../data/request/SignInRequestPayload';
 import { useFormik } from 'formik';
-import signInValidation from '../../utils/formValidation/signInValidation';
 import bg from "../../assets/bg/signInBg.png";
 import { useTranslation } from 'react-i18next';
 import SwitchButton from '../../components/buttons/SwitchButton';
 import PrimaryButton from '../../components/buttons/PrimaryButton';
 import { Link } from 'react-router-dom';
 import DothBottomLabel from '../../components/include/DothBottomLabel';
+import { signInValidation } from '../../utils/formValidation/signInValidation';
 
 const SignIn: React.FC = () => {
 
@@ -21,7 +21,7 @@ const SignIn: React.FC = () => {
         setIsRemeberMe(prev => !prev);
     };
 
-    const initialValues: SignUpRequestPayload = (
+    const initialValues: SignInRequestPayload = (
         {
             email: "",
             password: "",
@@ -30,7 +30,7 @@ const SignIn: React.FC = () => {
     const formik = useFormik({
         initialValues,
         validationSchema: signInValidation,
-        onSubmit: async (values: SignUpRequestPayload) => {
+        onSubmit: async (values: SignInRequestPayload) => {
             // try {
             //     const userData = await login(values).unwrap();
             //     dispatch(setCredentials(userData.response));

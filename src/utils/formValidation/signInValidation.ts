@@ -1,10 +1,10 @@
 import * as Yup from 'yup';
-import { SignUpRequestPayload } from '../../data/request/SignUpRequestPayload';
+import { SignInRequestPayload } from '../../data/request/SignInRequestPayload';
 import { t } from 'i18next';
 import "../i18n";
 
 
-const signInValidation: Yup.Schema<SignUpRequestPayload> = Yup.object(
+export const signInValidation: Yup.Schema<SignInRequestPayload> = Yup.object(
     {
         email: Yup
             .string()
@@ -17,5 +17,3 @@ const signInValidation: Yup.Schema<SignUpRequestPayload> = Yup.object(
             .required(`${t('requiredPassword')}`),
     }
 );
-
-export default signInValidation;

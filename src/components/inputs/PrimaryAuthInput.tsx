@@ -40,7 +40,7 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 <input
                     id={name}
                     name={name}
-                    className={`px-4 md:px-6 py-3 md:py-4 w-full text-baseGray text-sm md:text-base placeholder:text-baseGray/50 rounded-full border bg-gradient-to-br from-darkBlue to-darkPurple outline-none shadow-md shadow-transparent focus:border-primaryBlue hover:shadow-purple-600/35 focus:shadow-purple-600/50 duration-200 ${borderStyle}`}
+                    className={`px-4 md:px-6 py-3 md:py-4 w-full text-baseGray text-sm md:text-base placeholder:text-baseGray/50 rounded-full border bg-gradient-to-br from-darkBlue to-darkPurple focus:brightness-125 hover:brightness-125 outline-none shadow-md shadow-transparent focus:border-primaryBlue hover:shadow-purple-600/35 focus:shadow-purple-600/50 duration-200 ${borderStyle}`}
                     type={showPassword ? "text" : inputType}
                     placeholder={t(placeHolder)}
                     onBlur={formik.handleBlur}
@@ -57,11 +57,13 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 )
                 }
             </div>
-            {formik.touched[name] && formik.errors[name] && (
-                <p className="absolute flex text-primaryRed -bottom-0 start-2 text-xs lg:text-sm">
-                    {formik.errors[name]}
-                </p>
-            )}
+            <span className='relative w-full block'>
+                {formik.touched[name] && formik.errors[name] && (
+                    <p className="w-full text-start absolute text-primaryRed top-1 start-2 text-xs lg:text-sm">
+                        {formik.errors[name]}
+                    </p>
+                )}
+            </span>
         </div>
     )
 };
