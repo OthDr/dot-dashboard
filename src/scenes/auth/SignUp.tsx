@@ -45,7 +45,7 @@ const SignUp: React.FC = () => {
 
             <div className="relative w-1/2 hidden lg:block">
                 <img className='w-full h-full' src={bg} alt="" />
-                <div className="absolute top-0 start-0 drop-shadow-md capitalize w-full h-full flex flex-col gap-y-4 items-center justify-center bg-transparent text-primaryWhite font-bold animate-slowfade2">
+                <div className="absolute top-0 start-0 drop-shadow-md capitalize w-full h-full flex flex-col gap-y-4 items-center justify-center bg-transparent text-primaryWhite font-bold ">
                     <h3 className='opacity-75 text-lg'>{t("signInH3")}</h3>
                     <h1 className='lg:text-4xl'>{t("signInH1")}</h1>
                 </div>
@@ -56,7 +56,7 @@ const SignUp: React.FC = () => {
                     className='w-full md:w-[400px] space-y-2 md:space-y-6 animate-slowfade2'
                     onSubmit={formik.handleSubmit}
                 >
-                    <div className="block space-y-2 lg:space-y-3 pb-3 lg:pb-6">
+                    <div className="block space-y-2 lg:space-y-3 pb-2 lg:pb-4">
                         <h1 id="gradientH1" className='text-start text-primaryWhite font-bold text-lg lg:text-3xl'>{t("signInFormH1")}</h1>
                         <p className='text-start text-baseGray text-xs lg:text-sm'>{t("signInFormP")}</p>
                     </div>
@@ -96,8 +96,8 @@ const SignUp: React.FC = () => {
                     />
 
                     <div className="w-fit mx-auto flex gap-x-1 text-sm lg:text-base text-baseGray">
-                        <p>{t("dontHaveAccount")}</p>
-                        <Link to="/sign-up" className='text-primaryWhite font-bold hover:underline'>{t("signUp")}</Link>
+                        <p>{t("alreadyHaveAnAccount")}</p>
+                        <Link to="/sign-in" className='text-primaryWhite font-bold hover:underline'>{t("signIn")}</Link>
                     </div>
                 </form>
 

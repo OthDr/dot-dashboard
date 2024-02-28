@@ -26,7 +26,7 @@ const PrimaryAuthInput: React.FC<Props> = ({
     const [showPassword, setShowPassword] = useState<boolean>(false);
 
     return (
-        <div className='relative w-full flex-col items-start pb-6'>
+        <div className='relative w-full flex-col items-start pb-3'>
 
             {label &&
                 <label
@@ -57,7 +57,7 @@ const PrimaryAuthInput: React.FC<Props> = ({
                 )
                 }
             </div>
-            <span className='relative w-full block'>
+            <span className={`${inputType === "password" ? " pb-2 ":" pb-1 "} relative w-full block `}>
                 {formik.touched[name] && formik.errors[name] && (
                     <p className="w-full text-start absolute text-primaryRed top-1 start-2 text-xs lg:text-sm">
                         {formik.errors[name]}

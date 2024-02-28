@@ -56,7 +56,7 @@ const SignIn: React.FC = () => {
                     className='w-full md:w-[400px] space-y-2 md:space-y-6 animate-slowfade2'
                     onSubmit={formik.handleSubmit}
                 >
-                    <div className="block space-y-2 lg:space-y-3 pb-3 lg:pb-6">
+                    <div className="block space-y-2 lg:space-y-3 pb-2 lg:pb-4">
                         <h1 id="gradientH1" className='text-start text-primaryWhite font-bold text-lg lg:text-3xl'>{t("signInFormH1")}</h1>
                         <p className='text-start text-baseGray text-xs lg:text-sm'>{t("signInFormP")}</p>
                     </div>

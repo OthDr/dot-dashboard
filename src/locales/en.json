@@ -28,6 +28,7 @@
     "signInBtn": "Sign In",
     "rememberMe": "Remember me",
     "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAnAccount": "Already have an account?",
     "requiredFullName": "Please enter your full name",
     "invalidPassword": "Include uppercase, lowercase letters and numbers",
     "invalidFullName": "Full name can only contain letters"
