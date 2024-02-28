@@ -51,7 +51,7 @@ const SignUp: React.FC = () => {
                 </div>
             </div>
 
-            <div className="relative w-full p-4 lg:p-0 lg:w-1/2 flex flex-col items-center justify-center  bg-gradient-to-br from-darkestPurple1 to-darkestPurple2">
+            <div className="relative w-full p-4 lg:p-0 lg:w-1/2 flex flex-col items-center justify-center auth-bg">
                 <form
                     className='w-full md:w-[400px] space-y-2 md:space-y-6 animate-slowfade2'
                     onSubmit={formik.handleSubmit}
