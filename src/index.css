@@ -74,6 +74,15 @@ input:-webkit-autofill {
   height: 100vh;
 }
 
+
+.dashboard-bg {
+  background-image: url('../src/assets//bg/dashboardPurpBg.svg'); 
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh; 
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -87,3 +96,5 @@ input:-webkit-autofill {
     background-position: 0% 50%;
   }
 }
+
+

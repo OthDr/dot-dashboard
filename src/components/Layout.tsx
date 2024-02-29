@@ -10,7 +10,7 @@ const Layout = () => {
             <Navbar />
             <div className="flex bg-slate-900">
                 <Sidebar />
-                <div className="w-full bg-slate-700">
+                <div className="w-full bg-slate-700 dashboard-bg">
                     <Outlet />
                 </div>
             </div>
