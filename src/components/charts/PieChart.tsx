@@ -2,7 +2,7 @@ import { ResponsivePie } from '@nivo/pie'
 import React from 'react'
 import { pieMockData } from '../../data/pieMockData'
 
-const PieChart = () => {
+const PieChart: React.FC = () => {
     return (
         <div className="h-full">
             <ResponsivePie

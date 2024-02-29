@@ -4,7 +4,7 @@ import Footer from './global/Footer'
 import Sidebar from './global/Sidebar'
 import { Outlet } from 'react-router-dom'
 
-const Layout = () => {
+const Layout: React.FC = () => {
     return (
         <div>
             <Navbar />

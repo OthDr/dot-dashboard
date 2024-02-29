@@ -1,7 +1,7 @@
 import { ResponsiveCalendar } from '@nivo/calendar'
 import { calendarMockData } from '../../data/calendarData'
 
-const CalendarChart = () => {
+const CalendarChart: React.FC = () => {
     return (
         <ResponsiveCalendar
             data={calendarMockData}

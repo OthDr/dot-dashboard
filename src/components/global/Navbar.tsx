@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
     return (
         <header className='h-12 bg-slate-800 '>
             Navbar

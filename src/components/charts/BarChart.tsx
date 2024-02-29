@@ -2,7 +2,7 @@ import { ResponsiveBar } from '@nivo/bar'
 import React from 'react'
 import { barData } from '../../data/barData'
 
-const BarChart = () => {
+const BarChart: React.FC = () => {
     return (
         <ResponsiveBar
             data={barData}

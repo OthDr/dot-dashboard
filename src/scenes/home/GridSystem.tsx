@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GridSystem = () => {
+const GridSystem: React.FC = () => {
     return (
         <div
             className='grid grid-cols-12 gap-2'

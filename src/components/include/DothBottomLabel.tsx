@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DothBottomLabel = () => {
+const DothBottomLabel: React.FC = () => {
     return (
         <div className='absolute text-xs w-full bottom-2'>
             <span className='block w-fit mx-auto text-baseGray opacity-60 drop-shadow'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Users = () => {
+const Users: React.FC = () => {
     return (
         <div className='text-white'>Users</div>
     )
