@@ -6,11 +6,11 @@ import { Outlet } from 'react-router-dom'
 
 const Layout: React.FC = () => {
     return (
-        <div>
+        <div className='block h-full'>
             <Navbar />
-            <div className="flex bg-slate-900">
+            <div className="h-full flex bg-slate-900">
                 <Sidebar />
-                <div className="w-full bg-slate-700 dashboard-bg">
+                <div className="block w-full h-full bg-slate-700 dashboard-bg">
                     <Outlet />
                 </div>
             </div>

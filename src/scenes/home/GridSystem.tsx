@@ -10,28 +10,28 @@ import ColSpan4R1 from './cards/ColSpan4R1';
 const GridSystem: React.FC = () => {
     return (
         <div
-            className='grid grid-cols-12 gap-2'
+            className='grid grid-cols-6 lg:grid-cols-12 gap-2 h-full '
         >
-            <div className="p-2 bg-red-300 col-span-5">
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-5  hover:scale-[101%] duration-300 overflow-hidden">
                 <ColSpan5R1 />
             </div>
-            <div className="p-2 bg-red-300 col-span-3">
-                <ColSpan3 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-3  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan3 /> */}
             </div>
-            <div className="p-2 bg-red-300 col-span-4">
-                <ColSpan4R1 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-4  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan4R1 /> */}
             </div>
-            <div className="p-2 bg-red-300 col-span-7">
-                <ColSpan7 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-7  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan7 /> */}
             </div>
-            <div className="p-2 bg-red-300 col-span-5">
-                <ColSpan5R2 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-5  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan5R2 /> */}
             </div>
-            <div className="p-2 bg-red-300 col-span-8">
-                <ColSpan8 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-8  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan8 /> */}
             </div>
-            <div className="p-2 bg-red-300 col-span-4">
-                <ColSpan4R2 />
+            <div className="h-[220px] lg:h-[260px] bg-transparent lg:col-span-4  hover:scale-[101%] duration-300 overflow-hidden">
+                <ColSpan5R1 />{/* <ColSpan4R2 /> */}
             </div>
         </div>
     );

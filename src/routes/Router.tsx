@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
-import Users from "../scenes/users/Users";
-import Products from "../scenes/products/Products";
 import Home from "../scenes/home/Home";
 import SignIn from "../scenes/auth/SignIn";
 import SignUp from "../scenes/auth/SignUp";
 import NotFound from "../scenes/404/NotFound";
+import Tables from "../scenes/tables/Tables";
+import Settings from "../scenes/settings/Settings";
 
 export const Router = createBrowserRouter([
     {
@@ -21,12 +21,12 @@ export const Router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "/users",
-                element: <Users />
+                path: "/tables",
+                element: <Tables />
             },
             {
-                path: "/products",
-                element: <Products />
+                path: "/settings",
+                element: <Settings />
             },
         ]
     },

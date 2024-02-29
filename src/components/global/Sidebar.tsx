@@ -9,9 +9,9 @@ const Sidebar = () => {
     return (
         <>
             <aside
-                onMouseEnter={() => setIsOppen(true)}
-                onMouseLeave={() => setIsOppen(false)}
-                className={`relative min-h-screen bg-gradient-to-tl from-[#041F50] to-darkestPurple2 ${isOppen ? "w-72" : "w-20 hover:w-72 duration-200 "} duration-200 `}
+                // onMouseEnter={() => setIsOppen(true)}
+                // onMouseLeave={() => setIsOppen(false)}
+                className={`relative min-h-screen bg-gradient-to-tl from-[#041F50] to-darkestPurple2 ${isOppen ? "w-72" : "w-20  duration-200 "} duration-200 `}
             >
                 <div className='text-white'>
                     profile

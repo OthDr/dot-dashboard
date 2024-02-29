@@ -79,8 +79,8 @@ input:-webkit-autofill {
   background-image: url('../src/assets//bg/dashboardPurpBg.svg'); 
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 100vh; 
+  width: 100%;
+  height: 100%; 
 }
 
 @keyframes gradient {

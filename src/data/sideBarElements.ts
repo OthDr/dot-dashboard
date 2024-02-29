@@ -19,8 +19,8 @@ export const sideBarElements = [
             },
             {
                 id: 2,
-                title: "Charts",
-                url: "/charts",
+                title: "Tables",
+                url: "/tables",
                 icon: chartsIcon,
             },
             {
