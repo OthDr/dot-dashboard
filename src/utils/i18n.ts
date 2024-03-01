@@ -26,8 +26,5 @@ i18n
             escapeValue: false,
         },
     });
-// console.log(i18n.isInitialized); // should output "true"
-// console.log(i18n.language); // should output the detected language, or "en" if none was detected
-// console.log(i18n.t('transaction_modal.Details')); // should output the translated text
-
+    
 export default i18n;
