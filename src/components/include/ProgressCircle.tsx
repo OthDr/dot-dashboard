@@ -2,15 +2,13 @@ import { useEffect, useState } from 'react';
 
 interface ProgressCircleProps {
     progressValue: number;
-    parameterStr: string;
 }
 
-const ProgressCircle: React.FC<ProgressCircleProps> = ({ progressValue, parameterStr }) => {
-
+const ProgressCircle: React.FC<ProgressCircleProps> = ({ progressValue }) => {
     const [offset, setOffset] = useState(0);
 
     const radius = 50;
-    const strokeWidth = 11;
+    const strokeWidth = 8;
     const circumference = 2 * Math.PI * radius;
 
     useEffect(() => {
@@ -20,9 +18,9 @@ const ProgressCircle: React.FC<ProgressCircleProps> = ({ progressValue, paramete
 
     return (
         <div className="relative w-32 h-32">
-            <svg className="w-full h-full rotate-0">
+            <svg className="w-full h-full">
                 <circle
-                    className="text-primaryBlue"
+                    className="text-blue-600"
                     strokeWidth={strokeWidth}
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
@@ -34,14 +32,7 @@ const ProgressCircle: React.FC<ProgressCircleProps> = ({ progressValue, paramete
                     cy="50%"
                 />
             </svg>
-            <div className="absolute inset-x-0 bottom-1 flex flex-col gap-y-2 items-center justify-center bg-darkPurple rounded-lg p-2">
-                <span className="text-sm whitespace-nowrap lg:text-base font-bold text-baseGray">
-                    {progressValue}%
-                </span>
-                <span className="text-xs whitespace-nowrap lg:text-sm text-baseGray">
-                    Based on {parameterStr}
-                </span>
-            </div>
+            <span className="absolute inset-0 flex items-center justify-center text-lg font-bold text-primaryWhite">{progressValue}%</span>
         </div>
     );
 };

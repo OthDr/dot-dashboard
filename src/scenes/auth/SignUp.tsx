@@ -57,7 +57,7 @@ const SignUp: React.FC = () => {
             <div className="relative w-1/2 hidden lg:block">
                 <img className='w-full h-full' src={bg} alt="" />
                 <div className="absolute top-0 start-0 drop-shadow-md capitalize w-full h-full flex flex-col gap-y-4 items-center justify-center bg-transparent text-primaryWhite font-bold ">
-                    <h3 className='opacity-75 text-lg'>{t("signInH3")}</h3>
+                    <h3 className='lg:opacity-75 text-lg'>{t("signInH3")}</h3>
                     <h1 className='lg:text-4xl'>{t("signInH1")}</h1>
                 </div>
             </div>
