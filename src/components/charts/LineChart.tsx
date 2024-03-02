@@ -6,7 +6,7 @@ const LineChart: React.FC = () => (
     <div className="h-full">
         <ResponsiveLine
             data={lineMockData}
-            margin={{ top: 20, right: 0, bottom: 30, left: 0 }}
+            margin={{ top: 20, right: 20, bottom: 30, left: 5 }}
             xScale={{ type: 'point' }}
             yScale={{
                 type: 'linear',

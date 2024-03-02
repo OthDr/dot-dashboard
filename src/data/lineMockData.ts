@@ -35,22 +35,6 @@ export const lineMockData = [
                 "x": "moto",
                 "y": 79
             },
-            {
-                "x": "bicycle",
-                "y": 66
-            },
-            {
-                "x": "horse",
-                "y": 250
-            },
-            {
-                "x": "skateboard",
-                "y": 148
-            },
-            {
-                "x": "others",
-                "y": 97
-            }
         ]
     },
     {
@@ -89,22 +73,6 @@ export const lineMockData = [
                 "x": "moto",
                 "y": 16
             },
-            {
-                "x": "bicycle",
-                "y": 184
-            },
-            {
-                "x": "horse",
-                "y": 149
-            },
-            {
-                "x": "skateboard",
-                "y": 288
-            },
-            {
-                "x": "others",
-                "y": 62
-            }
         ]
     },
     {
@@ -143,22 +111,6 @@ export const lineMockData = [
                 "x": "moto",
                 "y": 180
             },
-            {
-                "x": "bicycle",
-                "y": 259
-            },
-            {
-                "x": "horse",
-                "y": 242
-            },
-            {
-                "x": "skateboard",
-                "y": 121
-            },
-            {
-                "x": "others",
-                "y": 92
-            }
         ]
     },
     {
@@ -197,22 +149,6 @@ export const lineMockData = [
                 "x": "moto",
                 "y": 100
             },
-            {
-                "x": "bicycle",
-                "y": 50
-            },
-            {
-                "x": "horse",
-                "y": 127
-            },
-            {
-                "x": "skateboard",
-                "y": 116
-            },
-            {
-                "x": "others",
-                "y": 205
-            }
         ]
     },
     {
@@ -251,22 +187,6 @@ export const lineMockData = [
                 "x": "moto",
                 "y": 282
             },
-            {
-                "x": "bicycle",
-                "y": 171
-            },
-            {
-                "x": "horse",
-                "y": 34
-            },
-            {
-                "x": "skateboard",
-                "y": 59
-            },
-            {
-                "x": "others",
-                "y": 106
-            }
         ]
     }
 ];

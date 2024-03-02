@@ -16,7 +16,7 @@ const GridSystem: React.FC = () => {
                 <ColSpan5R1 />
             </div>
             <div className="h-[260px] lg:h-[300px] bg-transparent col-span-5 md:col-span-5 lg:col-span-3  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
-                <ColSpan5R1 />{/* <ColSpan3 /> */}
+                <ColSpan3 />
             </div>
             <div className="h-[260px] lg:h-[300px] bg-transparent col-span-7 md:col-span-7 lg:col-span-4  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
                 <ColSpan5R1 />{/* <ColSpan4R1 /> */}
