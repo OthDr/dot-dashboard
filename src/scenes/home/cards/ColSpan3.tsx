@@ -13,7 +13,7 @@ const ColSpan3: React.FC = () => {
                 </div>
                 <div className=" block w-fit h-full bg-transparent">
 
-                    <ProgressCircle progressValue={85} />
+                    <ProgressCircle parameterStr='Likes' progressValue={85} />
                 </div>
 
             </div>
