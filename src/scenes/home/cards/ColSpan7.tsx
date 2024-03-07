@@ -11,7 +11,7 @@ const ColSpan7: React.FC = () => {
                     <h2 className='text-lg lg:text-xl font-bold'>Mark Johnson</h2>
                     <p className='text-xs lg:text-sm text-baseGray max-w-44'>Glad to see you again! Ask me anything.</p>
                 </div>
-                <div className=" block w-2/3 h-full bg-transparent">
+                <div className=" block w-2/3 h-full bg-transparent bg-darkPurple ">
                     <LineChart />
                 </div>
 

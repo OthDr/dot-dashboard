@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer: React.FC = () => {
     return (
-        <div>Footer</div>
+        <div className='block h-12 bg-slate-950'>Footer</div>
     )
 }
 

@@ -10,7 +10,7 @@ import ColSpan4R1 from './cards/ColSpan4R1';
 const GridSystem: React.FC = () => {
     return (
         <div
-            className='grid lg:grid-cols-12 gap-x-1 gap-y-4 md:gap-y-2 lg:gap-3 h-full '
+            className='grid lg:grid-cols-12 gap-x-1 gap-y-4 md:gap-y-2 lg:gap-3 '
         >
             <div className="h-[260px] lg:h-[300px] bg-transparent col-span-12 md:col-span-9 lg:col-span-5  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
                 <ColSpan5R1 />

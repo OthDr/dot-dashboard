@@ -10,24 +10,25 @@ const ColSpan5R2: React.FC = () => {
                     <h1 className='text-lg lg:text-xl font-bold drops'>Traffic</h1>
 
                     <ul className='h-fit flex flex-col gap-y-2 lg:gap-y-4 text-base drop-shadow'>
-                        <li>Users: 
+                        <li>Users:
                             <span className="text-primaryGreen font-bold px-2">
                                 +73
                             </span>
                         </li>
-                        <li>Clicks: 
+                        <li>Clicks:
                             <span className="text-primaryGreen font-bold px-2">
                                 +918
                             </span>
                         </li>
-                        <li>Sales: 
+                        <li>Sales:
                             <span className="text-primaryGreen font-bold px-2">
                                 +54
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div className=" block w-full h-full bg-transparent bg-darkestPurple1 p-2 rounded-xl group-hover:shadow-darkestPurple1 shadow-sm group-hover:shadow-md ">
+                
+                <div className=" block w-full h-full bg-transparent bg-darkestPurple2 p-2 rounded-xl group-hover:shadow-darkestPurple1 shadow-sm group-hover:shadow-md ">
                     <BarChart />
                 </div>
 
