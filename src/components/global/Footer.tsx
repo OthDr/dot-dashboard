@@ -1,8 +1,11 @@
 import React from 'react'
+import DothBottomLabel from '../include/DothBottomLabel'
 
 const Footer: React.FC = () => {
     return (
-        <div className='block h-12 bg-slate-950'>Footer</div>
+        <div className='block h-6 bg-transparent'>
+            <DothBottomLabel />
+        </div>
     )
 }
 

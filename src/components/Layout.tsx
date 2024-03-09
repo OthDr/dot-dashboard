@@ -7,9 +7,9 @@ import { Outlet } from 'react-router-dom'
 const Layout: React.FC = () => {
 
     return (
-        <div className='block h-screen'>
+        <div className='block h-screen dashboard-bg '>
             <Navbar />
-            <div className="h-[calc(100vh-96px)] flex items-start dashboard-bg p-2">
+            <div className="h-[calc(100vh-72px)] flex items-start p-2">
                 <Sidebar />
                 <div className="block w-full h-full bg-transparent overflow-y-scroll ">
                     <Outlet />
