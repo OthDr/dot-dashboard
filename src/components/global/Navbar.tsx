@@ -2,8 +2,11 @@ import React from 'react'
 
 const Navbar: React.FC = () => {
     return (
-        <header className='block h-12 bg-slate-800 '>
-            Navbar
+        <header className='w-full block h-12 bg-slate-800 '>
+            <div className="max-w-[1920px] mx-auto ">
+                Navbar
+            </div>
+
         </header>
     )
 }
