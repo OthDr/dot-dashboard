@@ -6,7 +6,7 @@ const ColSpan3: React.FC = () => {
     const progressValue = 85;
 
     return (
-        <div className='group min-w-[200px] relative block rounded-xl overflow-hidden h-[260px] lg:h-[300px]'>
+        <div className='group min-w-[200px] relative block rounded-xl overflow-hidden h-[260px] lg:h-full'>
             <div className='z-10 p-4 h-full w-full top-0 left-0 absolute block bg-gradient-to-br from-darkPurple/80 to-darkestPurple1/25 duration-150 lg:opacity-75 hover:opacity-100'>
 
                 <div className="w-full flex flex-col text-primaryWhite lg:gap-y-1">

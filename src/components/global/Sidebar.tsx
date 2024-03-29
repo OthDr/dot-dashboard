@@ -8,9 +8,9 @@ const Sidebar = () => {
 
     return (
         <aside
-            // onMouseEnter={() => setIsOppen(true)}
-            // onMouseLeave={() => setIsOppen(false)}
-            className={`block relative h-full bg-gradient-to-tl from-[#041F50] to-darkestPurple2 rounded-lg shadow-darkBlue shadow-xl ${isOppen ? "w-72" : "w-20  duration-200 "} duration-200  `}
+            onMouseEnter={() => setIsOppen(true)}
+            onMouseLeave={() => setIsOppen(false)}
+            className={`block relative h-full bg-gradient-to-tl from-[#041F50] to-darkestPurple2 rounded-lg shadow-darkBlue shadow-xl ${isOppen ? "w-72" : "w-20  duration-150 "} duration-150  `}
         >
             <div className='text-white'>
                 profile
@@ -27,11 +27,11 @@ const Sidebar = () => {
                                 {link.listItems.map((listItem) => (
                                     <li key={listItem.id}>
                                         <Link
-                                            to={listItem.url}
-                                            className={`flex w-full gap-x-3 group duration-150 hover:bg-darkPurple/85  p-2 rounded-2xl drop-shadow ${isOppen ? "" : " justify-around"}${location.pathname === listItem.url ? " bg-darkPurple/85 " : ""}`}
+                                            to={listItem.path}
+                                            className={`flex w-full gap-x-3 group duration-150 hover:bg-darkPurple/85  p-2 rounded-2xl drop-shadow ${isOppen ? "" : " justify-around"}${location.pathname === listItem.path ? " bg-darkPurple/85 " : ""}`}
                                         >
                                             <listItem.icon
-                                                className={` ${location.pathname === listItem.url ? "text-white " : " text-primaryBlue "} w-6 h-6 `}
+                                                className={` ${location.pathname === listItem.path ? "text-white " : " text-primaryBlue "} w-6 h-6 `}
                                             />
                                             <span className={`${isOppen ? "block" : "hidden"} text-white font-bold group-hover:translate-x-1 duration-150`}>
                                                 {listItem.title}

@@ -11,7 +11,7 @@ const Layout: React.FC = () => {
             <Navbar />
             <div className="max-w-[1920px] mx-auto h-[calc(100vh-72px)] flex items-start p-2">
                 <Sidebar />
-                <div className="block w-full h-full bg-transparent overflow-y-scroll ">
+                <div className="block w-full h-full bg-transparent overflow-y-scroll animate-slowfade2 ">
                     <Outlet />
                 </div>
             </div>

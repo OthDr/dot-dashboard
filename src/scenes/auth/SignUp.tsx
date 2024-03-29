@@ -47,7 +47,7 @@ const SignUp: React.FC = () => {
         setIsLoading(true);
         setTimeout(() => {
             setIsLoading(false);
-            navigate('/dashboard');
+            navigate('/sign-in');
         }, 1000);
     };
 
