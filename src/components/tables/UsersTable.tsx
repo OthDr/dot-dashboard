@@ -9,8 +9,13 @@ interface Props {
 
 const UsersTable: React.FC<Props> = ({ users }: Props) => {
     return (
-        <TableContainer component={Paper} className='overflow-auto'>
-            <Table>
+        <TableContainer 
+        component={Paper} 
+        className='overflow-auto'
+        >
+            <Table
+            className='h-fit overflow-auto'
+            >
                 <TableHead>
                     <TableRow>
                         <TableCell>ID</TableCell>

@@ -27,7 +27,7 @@ const GridSystem: React.FC = () => {
             <div className="lg:row-span-2 h-[260px] lg:h-full bg-transparent col-span-12 md:col-span-9 lg:col-span-5  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
                 <ColSpan4R1 />
             </div>
-            <div className="lg:row-span-3 h-[260px] lg:h-full bg-transparent col-span-12 md:col-span-10 lg:col-span-8  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
+            <div className="lg:row-span-3 h-[260px] lg:h-full bg-transparent col-span-12 md:col-span-12 lg:col-span-8  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">
                 <ColSpan7 />
             </div>
             <div className="lg:row-span-3 h-[260px] lg:h-full bg-transparent col-span-12 md:col-span-8 lg:col-span-4  hover:scale-[101%] duration-300 rounded-xl shadow-lg hover:shadow-black/60">

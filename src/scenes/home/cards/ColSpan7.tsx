@@ -4,7 +4,7 @@ import mockUsers from '../../../data/usersMockData';
 
 const ColSpan7: React.FC = () => {
     return (
-        <div className='group relative block rounded-xl overflow-hidden h-[260px] lg:h-full'>
+        <div className='group relative block rounded-xl overflow-auto h-[260px] lg:h-full'>
             <UsersTable users={mockUsers}/>
         </div>
     );
