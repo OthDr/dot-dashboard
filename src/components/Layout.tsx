@@ -11,9 +11,11 @@ const Layout: React.FC = () => {
             <Navbar />
             <div className="max-w-[1920px] mx-auto h-[calc(100vh-72px)] flex items-start p-2">
                 <Sidebar />
-                <div className="block w-full h-full bg-transparent overflow-y-scroll animate-slowfade2 ">
-                    <Outlet />
-                </div>
+                <main className="block w-full g-transparent overflow-auto animate-slowfade2 h-[calc(100vh-89px)] ">
+                    <div className='px-2 lg:px-4 w-full h-full rounded-lg '>
+                        <Outlet />
+                    </div>
+                </main>
             </div>
             <Footer />
         </div>

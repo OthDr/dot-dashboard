@@ -4,7 +4,7 @@ import Home from "../scenes/home/Home";
 import SignIn from "../scenes/auth/SignIn";
 import SignUp from "../scenes/auth/SignUp";
 import NotFound from "../scenes/404/NotFound";
-import Tables from "../scenes/tables/Tables";
+import Tables from "../components/tables/Tables";
 import Settings from "../scenes/settings/Settings";
 
 export const Router = createBrowserRouter([

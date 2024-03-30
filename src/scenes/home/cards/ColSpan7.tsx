@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersTable from '../../tables/UsersTable';
+import UsersTable from '../../../components/tables/UsersTable';
 import mockUsers from '../../../data/usersMockData';
 
 const ColSpan7: React.FC = () => {
