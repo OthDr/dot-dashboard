@@ -9,7 +9,7 @@ interface Props {
 
 const UsersTable: React.FC<Props> = ({ users }: Props) => {
     return (
-        <TableContainer component={Paper}>
+        <TableContainer component={Paper} className='overflow-auto'>
             <Table>
                 <TableHead>
                     <TableRow>
@@ -33,14 +33,24 @@ const UsersTable: React.FC<Props> = ({ users }: Props) => {
                             <TableCell>{user.email}</TableCell>
                             <TableCell>{user.birthDate}</TableCell>
                             <TableCell>{user.function}</TableCell>
-                            <TableCell>{user.status ? 'Active' : 'Inactive'}</TableCell>
+                            <TableCell
+
+                            >
+                                <div
+                                    className={` ${user.status ? "bg-primaryGreen/30 text-primaryGreen " : "bg-primaryRed/30 text-primaryRed "} text-center p-1 rounded-lg text-xs `}
+                                >
+
+                                    {user.status ? 'Active' : 'Inactive'}
+                                </div>
+                            </TableCell>
                             <TableCell>
                                 <img src={avatarPic}
                                     alt={`${user.firstName}'s profile`}
-                                    className='rounded-full w-10 h-10 border border-primaryGreen'
+                                    className='rounded-full w-10 h-10 border border-purple-800'
                                 />
                             </TableCell>
-                            <TableCell>{user.lastActive?.toLocaleString()}</TableCell>
+                            <TableCell>{`${user.lastActive?.toLocaleDateString()} ${user.lastActive?.toLocaleTimeString(undefined, { hour: 'numeric', minute: 'numeric' })}`}</TableCell>
+
                         </TableRow>
                     ))}
                 </TableBody>
