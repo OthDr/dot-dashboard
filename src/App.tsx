@@ -2,7 +2,6 @@ import { RouterProvider } from "react-router-dom";
 import RtlHoc from "./utils/RtlHoc";
 import { Router } from "./routes/Router";
 
-
 const Main = () => {
   return (
     <RouterProvider router={Router} />
